@@ -1,11 +1,14 @@
 package com.example.androidmaster.todoapp
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -47,6 +50,19 @@ class TodoActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val intent: Intent = intent
+        val userName = intent.getStringExtra("user_name") ?: ""
+        val welcomeText = "Welcome, $userName!"
+
+        //Ensure tvWelcome is a TextView before assigning the text
+        val tvWelcome = findViewById<TextView>(R.id.tvWelcome)
+        if(tvWelcome != null){
+            tvWelcome.text = welcomeText
+        }else{
+            //Handle the case where tvWelcome is not found
+            Log.e("TodoActivity", "TextView with id R.id.tvWelcome not found!")
         }
     }
 
