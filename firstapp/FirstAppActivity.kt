@@ -10,6 +10,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidmaster.R
+import com.example.androidmaster.todoapp.TodoActivity
 
 class FirstAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,10 +29,13 @@ class FirstAppActivity : AppCompatActivity() {
         btnStart.setOnClickListener {                                               //Is the button clicked?
             val name = etName.text.toString()                                       //We convert the value of the editText component to String
 
-            if(name.isNotEmpty()){                                                  //We check if the name is not empty
-                val intent = Intent(this, ResultActivity::class.java) //We create an intent to go to the ResultActivity
-                intent.putExtra("EXTRA_NAME", name)                           //We add the name to the intent
-                startActivity(intent)                                               //We start the activity
+            if(name.isNotEmpty()){ //We check if the name is not empty
+                val intentOne = Intent(this, ResultActivity::class.java) //We create an intent to go to the ResultActivity
+                val intentTWo = Intent(this, TodoActivity::class.java)
+                intentOne.putExtra("EXTRA_NAME", name)                           //We add the name to the intent
+                intentTWo.putExtra("user_name", name)
+                startActivity(intentOne)                                               //We start the activity
+                startActivity(intentTWo)
             }
         }
     }
