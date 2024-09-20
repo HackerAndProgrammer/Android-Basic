@@ -31,11 +31,8 @@ class FirstAppActivity : AppCompatActivity() {
 
             if(name.isNotEmpty()){ //We check if the name is not empty
                 val intentOne = Intent(this, ResultActivity::class.java) //We create an intent to go to the ResultActivity
-                val intentTWo = Intent(this, TodoActivity::class.java)
                 intentOne.putExtra("EXTRA_NAME", name)                           //We add the name to the intent
-                intentTWo.putExtra("user_name", name)
                 startActivity(intentOne)                                               //We start the activity
-                startActivity(intentTWo)
             }
         }
     }
