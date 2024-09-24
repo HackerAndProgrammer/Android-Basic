@@ -14,11 +14,12 @@
         tools:context=".todoapp.TodoActivity">
 
         <TextView
+            android:id="@+id/tvWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:layout_marginVertical="44dp"
-            android:text="@string/todo_welcome"
+            tools:text="@string/todo_welcome"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="35sp"
@@ -28,6 +29,7 @@
             style="@style/todoSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
             android:text="@string/todo_categories"
             android:textStyle="bold" />
 
@@ -37,6 +39,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/tvTasks"
             style="@style/todoSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -51,6 +54,21 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginTop="16dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvNoTasks"
+                style="@style/todoSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todo_no_tasks"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -59,11 +77,11 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
         android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/todo_accent"
         android:src="@android:drawable/ic_input_add"
         app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
