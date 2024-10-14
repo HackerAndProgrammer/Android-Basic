@@ -16,7 +16,7 @@ class Bid(val amount: Int, val bidder: String)
     //}else{
         //return minimumPrice
     //}
-//}
+//} 
 
 // Refactorying the actionPrice function
 fun auctionPrice(bid: Bid?, minimumPrice: Int) = bid?.amount ?: minimumPrice
