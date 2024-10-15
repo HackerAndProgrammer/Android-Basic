@@ -5,14 +5,39 @@ You will find the basics of Kotlin, and small apps that demonstrate many concept
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -Recycler Views
+
+
+
 -viewBindings
+
+
+
 -graphic components (RadioGroups, Editexts, SearchViews, Checkbox, Switches, RangeSliders, TextViews, Views, Buttons, CardViews, etc), Constraint layouts, Linear layouts, Frame layouts, etc. 
+
+
+
 -Small apps that are advancing in their level of complexity, one more complex than the other 
+
+
+
 -Access and consumption of API services with Retrofit
+
+
+
 -bug management
+
+
+
 -data persistence with dataStore
+
+
+
 -value storage
+
+
+
 -and much more. 
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
