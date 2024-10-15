@@ -43,5 +43,11 @@ You will find the basics of Kotlin, and small apps that demonstrate many concept
 
 If you want to understand the structure of this project, make sure you have the Android view in YOUR project, to understand it. 
 This project is from a course I did, Arisguimera's Basic Android course: if you want to take it, click here: 
+
+
+
 https://github.com/ArisGuimera/Android-Expert?tab=readme-ov-file 
+
+
+
 Also don't forget to subscribe to Aristidevs' YouTube channel, nominate him for Github Star, and support him, so he can continue creating content quality educational and train more and more mobile developers like me.
