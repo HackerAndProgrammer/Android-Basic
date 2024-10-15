@@ -1,5 +1,5 @@
 In this directory you will find all the projects that I developed and all the concepts that I learned in my most basic beginning stage in Android. 
-In this repository no type of structure is followed, there are no good practices, no testing, nor absolutely anything other than the pure basics. 
+In this repository no type of structure is followed, there are no good practices, no testing, no absolutely anything other than the pure basics. 
 You will find the basics of Kotlin, and small apps that demonstrate many concepts learned throughout my career in Android Basic: 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
