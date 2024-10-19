@@ -2,7 +2,7 @@ In this directory you will find all the projects that I developed and all the co
 In this repository no type of structure is followed, there are no good practices, no testing, no absolutely anything other than the pure basics. 
 You will find the basics of Kotlin, and small apps that demonstrate many concepts learned throughout my career in Android Basic: 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 -Recycler Views
 
@@ -39,12 +39,12 @@ You will find the basics of Kotlin, and small apps that demonstrate many concept
 -and much more. 
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 It is important to clarify that the apps developed in this repository are NOT the same as in the Arisguimera course, since these apps are developed by me and I personalized them, commented on them, added functionalities, improved and updated them, to put the concepts learned into practice.
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 If you want to understand the structure of this project, make sure you have the Android view in YOUR project, to understand it. 
 This project is from a course I did, Arisguimera's Basic Android course: if you want to take it, click here: 
